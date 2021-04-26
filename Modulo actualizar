@@ -1,0 +1,50 @@
+based = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="16Bailame",
+  database = "gestion_academica" 
+	)
+pcursor = based.cursor ()
+
+if intro == "1" and accion == "E":
+	campoActualizar = input ("Ingresar campo actualizar: ")
+	valorActual = input ("Ingresar valor actual a actualizar: ")
+	valorFinal = input ("Ingresar valor final: ")
+	pcursor.execute("UPDATE alumnos SET "+campoActualizar+" = '"+valorFinal+"' WHERE "+campoActualizar+" = '"+valorActual+"'")
+	based.commit()
+if intro == "2" and accion == "E":
+	campoActualizar = input ("Ingresar campo actualizar: ")
+	valorActual = input ("Ingresar valor actual a actualizar: ")
+	valorFinal = input ("Ingresar valor final: ")
+	pcursor.execute("UPDATE maestros SET "+campoActualizar+" = '"+valorFinal+"' WHERE "+campoActualizar+" = '"+valorActual+"'")
+	based.commit()
+if intro == "3" and accion == "E":
+	campoActualizar = input ("Ingresar campo actualizar: ")
+	valorActual = input ("Ingresar valor actual a actualizar: ")
+	valorFinal = input ("Ingresar valor final: ")
+	pcursor.execute("UPDATE materia_carrera SET "+campoActualizar+" = '"+valorFinal+"' WHERE "+campoActualizar+" = '"+valorActual+"'")
+	based.commit()
+if intro == "4" and accion == "E":
+	campoActualizar = input ("Ingresar campo actualizar: ")
+	valorActual = input ("Ingresar valor actual a actualizar: ")
+	valorFinal = input ("Ingresar valor final: ")
+	pcursor.execute("UPDATE carreras SET "+campoActualizar+" = '"+valorFinal+"' WHERE "+campoActualizar+" = '"+valorActual+"'")
+	based.commit()
+if intro == "5" and accion == "E":
+	campoActualizar = input ("Ingresar campo actualizar: ")
+	valorActual = input ("Ingresar valor actual a actualizar: ")
+	valorFinal = input ("Ingresar valor final: ")
+	pcursor.execute("UPDATE materia_carrera SET "+campoActualizar+" = '"+valorFinal+"' WHERE "+campoActualizar+" = '"+valorActual+"'")
+	based.commit()
+if intro == "6" and accion == "E":
+	campoActualizar = input ("Ingresar campo actualizar: ")
+	valorActual = input ("Ingresar valor actual a actualizar: ")
+	valorFinal = input ("Ingresar valor final: ")
+	pcursor.execute("UPDATE materia_estudiante SET "+campoActualizar+" = '"+valorFinal+"' WHERE "+campoActualizar+" = '"+valorActual+"'")
+	based.commit()
+if intro == "7" and accion == "E":
+	campoActualizar = input ("Ingresar campo actualizar: ")
+	valorActual = input ("Ingresar valor actual a actualizar: ")
+	valorFinal = input ("Ingresar valor final: ")
+	pcursor.execute("UPDATE materia_profesor SET "+campoActualizar+" = '"+valorFinal+"' WHERE "+campoActualizar+" = '"+valorActual+"'")
+	based.commit() 
